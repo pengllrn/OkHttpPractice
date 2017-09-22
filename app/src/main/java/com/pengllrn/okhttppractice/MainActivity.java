@@ -8,6 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
+import com.pengllrn.okhttppractice.toolClass.MyDecoration;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         ItemAdapter adapter = new ItemAdapter(listDevice,MainActivity.this);
         recyclerView.setAdapter(adapter);
-        //recyclerView.addItemDecoration(new MyDecoration(this, MyDecoration.VERTICAL_LIST));//设置分割线
+        recyclerView.addItemDecoration(new MyDecoration(this, MyDecoration.VERTICAL_LIST));//设置分割线
         //-----设置recycler显示的内容
     }
 }
