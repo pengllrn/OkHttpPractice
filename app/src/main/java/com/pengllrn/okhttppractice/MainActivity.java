@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
+import com.pengllrn.okhttppractice.dataClass.Device;
 import com.pengllrn.okhttppractice.toolClass.MyDecoration;
 
 import java.util.ArrayList;

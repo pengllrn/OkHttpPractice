@@ -80,7 +80,7 @@ public class ImageLoader {
                 bitmap = BitmapFactory.decodeStream(response.body().byteStream());
                 FileOutputStream fos = new FileOutputStream(file);
                 //图片压缩处理
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
                 fos.close();
                 return bitmap;
             }
@@ -153,6 +153,7 @@ public class ImageLoader {
     boolean imageViewReused(PhotoToLoad photoToLoad) {
         String tag = imageViews.get(photoToLoad.imageView);
         if (tag == null || !tag.equals(photoToLoad.url))
+
             return true;
         return false;
     }

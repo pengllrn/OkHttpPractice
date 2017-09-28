@@ -24,7 +24,7 @@ public class FileCache {
     }
 
     public File getFile(String url) {
-        String filename = url.replace("/", "") + ".png";
+        String filename = url.replace("/", "") + ".jpg";
         File f = new File(cacheDir, filename);
         return f;
     }

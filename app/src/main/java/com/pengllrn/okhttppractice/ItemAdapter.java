@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.pengllrn.okhttppractice.dataClass.Device;
+
 import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{

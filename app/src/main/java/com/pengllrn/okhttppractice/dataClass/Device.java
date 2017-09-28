@@ -1,4 +1,4 @@
-package com.pengllrn.okhttppractice;
+package com.pengllrn.okhttppractice.dataClass;
 
 /**
  * @author Administrator
@@ -9,32 +9,32 @@ package com.pengllrn.okhttppractice;
  */
 
 public class Device {
-    private String deviceNum = "";
-    private String deviceType = "";
-    private String RoomName = "";
+    private String DeviceNum = "";
+    private String TypeId = "";
+    private String RoomId = "";
     private String OrderNum = "";
     private String UseFlag = "";
     private String imgUrl = "";
 
     public Device(String deviceNum, String deviceType, String roomName, String orderNum, String useFlag,String imgUrl) {
-        this.deviceNum = deviceNum;
-        this.deviceType = deviceType;
-        RoomName = roomName;
+        this.DeviceNum = deviceNum;
+        this.TypeId = deviceType;
+        RoomId = roomName;
         OrderNum = orderNum;
         UseFlag = useFlag;
         this.imgUrl = imgUrl;
     }
 
     public String getDeviceNum() {
-        return deviceNum;
+        return DeviceNum;
     }
 
     public String getDeviceType() {
-        return deviceType;
+        return TypeId;
     }
 
     public String getRoomName() {
-        return RoomName;
+        return RoomId;
     }
 
     public String getOrderNum() {
